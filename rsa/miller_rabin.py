@@ -9,10 +9,10 @@ def mod_pow(a: int, b: int, n: int) -> int:
     """
     modular exponentiation
     returns a ^ b (mod n)
-    :param a: 
-    :param b:
-    :param n:
-    :return:
+    :param a: base (int)
+    :param b: power (int)
+    :param n: modulo (int)
+    :return: a ^ b (mod n)
     """
     res = 1
     a = a % n
