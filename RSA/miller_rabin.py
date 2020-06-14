@@ -81,6 +81,6 @@ def miller_rabin(n: int, k=12) -> bool:
 if __name__ == '__main__':
     # for test
     # output all prime numbers from 0 to 100
-    for i in range(100):
+    for i in range(3, 100):
         if miller_rabin(i):
             print(i, end=" ")

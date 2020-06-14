@@ -13,6 +13,7 @@ def get_rand_prime():
     :return:
     """
     x = randint(1 << 1024 - 1, 1 << 1024)
+
     if x & 1 == 0:
         x += 1
     while not miller_rabin(x):
@@ -58,7 +59,7 @@ class RSA:
             self._q = q
 
         if exp is None:
-            self._exp = 3
+            self._exp = 65537
         else:
             self._exp = exp
 
@@ -74,7 +75,7 @@ class RSA:
         p = get_rand_prime()
         q = get_rand_prime()
         while q == p:
-            q = get_rand_prime
+            q = get_rand_prime()
         return p, q
 
     def encrypt(self, message):
@@ -96,10 +97,11 @@ class RSA:
 
 if __name__ == '__main__':
     # for test
-    rsa = RSA(p=11, q=23)
+    rsa = RSA()
     message = 133
     ct = rsa.encrypt(message)
     print(ct)
-    pt = rsa.encrypt(ct)
+    pt = rsa.decrypt(ct)
     print(pt)
+    print(pt == message)
 
