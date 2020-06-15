@@ -1,0 +1,14 @@
+--- #3_1 ---
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+True
+b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+True
+--- #3_2 ---
+['0x92', '0x66', '0x8b', '0xa4']
+['0x11', '0x83', '0x41', '0x32']
+['0x18', '0x04', '0x2f', '0x16']
+['0xe6', '0x52', '0x40', '0x76']
+--- #3_3 ---
+61d947ddeaabcbbfc1681b542fa62fcc96350bd2866eeae0fd6d0693b37d4cb7
+
+Process finished with exit code 0
