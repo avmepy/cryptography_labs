@@ -87,7 +87,8 @@ def sha256_hash(message: str):
 
     if chunk_num == 0:
         chunk_num = 1
-    chunks = [pad[512*i: 512*i+512] for i in range(chunk_num)]   # TODO
+    chunks = [pad[64*i:64*i+64] for i in range(chunk_num)]
+
     for chunk in chunks:
         w = split(chunk)
         for i in range(16, 64):

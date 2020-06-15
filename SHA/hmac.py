@@ -17,6 +17,6 @@ def hmac(key, message):
 
 
 if __name__ == '__main__':
-   key = b'skdjflwkdls'
+   key = b'test'
    message = b'message'
    print(hmac(key, message))
